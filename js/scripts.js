@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#gate-keeper').modal({backdrop: 'static', keyboard: false});
+  // $('#gate-keeper').modal({backdrop: 'static', keyboard: false});
   $("#age-submit").click(function(){
     var ageChecker = $('#age-varification').is(":checked");
 
