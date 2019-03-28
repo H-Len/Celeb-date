@@ -5,22 +5,17 @@ $(document).ready(function(){
     var hats = $('#form-hats').is(":checked");
     var poetInput = $("#form-poet").is(":checked");
     var litpref = $('#form-cats input:radio:checked').val();
+    $(".matches").hide();
 
-
-    console.log("The cats box is " + litpref);
-    // var ageChecker = $('#age-varification').is(":checked");
-    //
-    // if(ageChecker === true) {
-    //   $("#gate-keeper").modal('hide');
-    // } else {
-    //   $("#gate-keeper").effect("shake");
-    // }
-
-
-
-
-
-
+if (hats){
+  $("#shakespear").fadeIn();
+} else if (poetInput === false) {
+  $("#dickens").fadeIn();
+} else if (litpref === "classic") {
+  $("#lewis").show();
+} else {
+  $("#emily").fadeIn();
+}
 
 
   });
